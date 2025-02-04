@@ -13,7 +13,7 @@ describe('Scenarios where authentication is a pre-condition', () => {
     const attachFile = true
 
     cy.editNote(noteDescription, updatedNoteDescription, attachFile)
-    cy.wait('@getNotes')    
+    cy.wait('@getNotes')
     cy.deleteNote(updatedNoteDescription)
     cy.wait('@getNotes')
   })
